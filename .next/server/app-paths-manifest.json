@@ -1,6 +1,8 @@
 {
-  "/not-found": "app/not-found.js",
-  "/page": "app/page.js",
+  "/_not-found": "app/_not-found.js",
+  "/lomba/page": "app/lomba/page.js",
+  "/apple-icon.png/route": "app/apple-icon.png/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/lomba/page": "app/lomba/page.js"
+  "/icon.png/route": "app/icon.png/route.js",
+  "/page": "app/page.js"
 }
