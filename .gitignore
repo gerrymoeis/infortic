@@ -2,3 +2,25 @@ node_modules
 
 # Local Netlify folder
 .netlify
+
+# Next.js build output
+.next
+
+# Public files
+public
+
+# Coverage
+coverage
+
+# Jest
+jest.config.js
+
+# Netlify
+netlify-build.js
+netlify.toml
+
+# Next.js
+next.config.js
+
+# SWC
+.swc
