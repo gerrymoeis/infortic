@@ -20,10 +20,12 @@ const nextConfig = {
       }
     ]
   },
-  // This is the crucial part for Netlify deployment
-  output: 'export',
+  // Generate static files for Netlify only in production
+  output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
   // Ensure trailing slashes are used for better compatibility
   trailingSlash: true,
+  // Only set distDir in production to avoid development server issues
+  distDir: process.env.NODE_ENV === 'production' ? 'out' : '.next',
 }
 
 module.exports = nextConfig

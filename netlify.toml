@@ -1,23 +1,16 @@
 # example netlify.toml
 [build]
   command = "npm run build"
-  publish = ".next"
+  publish = "out"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# These redirects are usually not needed when using the Next.js plugin
-# but we'll include them as a fallback
-[[redirects]]
-  from = "/_next/static/*"
-  to = "/_next/static/:splat"
-  status = 200
-
+# This redirect is crucial for SPA routing
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  force = false
 
 [build.environment]
   NEXT_USE_NETLIFY_EDGE = "true"
